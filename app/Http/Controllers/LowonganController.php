@@ -37,6 +37,7 @@ class LowonganController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request,[
             'nama_low' => 'required|',
             'tgl_mulai' => 'required|',
             'lokasi' => 'required',

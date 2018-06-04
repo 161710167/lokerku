@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('content')
 <div class="row">
 	<div class="container">
@@ -51,7 +51,7 @@
 
 			  		<div class="form-group {{ $errors->has('judul') ? ' has-error' : '' }}">
 			  			<label class="control-label">Judul</label>	
-			  			<input type="date" name="judul" class="form-control"  required>
+			  			<input type="text" name="judul" class="form-control"  required>
 			  			@if ($errors->has('judul'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('judul') }}</strong>
@@ -69,7 +69,7 @@
 			  		</div>
 			  		<div class="form-group {{ $errors->has('tgl_mulai') ? ' has-error' : '' }}">
 			  			<label class="control-label">Tanggal Mulai</label>	
-			  			<input type="text" name="tgl_mulai" class="form-control"  required>
+			  			<input type="date" name="tgl_mulai" class="form-control"  required>
 			  			@if ($errors->has('tgl_mulai'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('tgl_mulai') }}</strong>

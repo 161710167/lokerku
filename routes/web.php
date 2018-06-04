@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/cek', function () {
+    return view('layouts.admin');
 });
 
 Auth::routes();
@@ -24,3 +24,4 @@ Route::resource('member','MemberController');
 Route::resource('perusahaan','PerusahaanController');
 Route::resource('lowongan','LowonganController');
 Route::resource('lamaran','LamaranController');
+

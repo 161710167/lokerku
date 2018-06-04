@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('content')
 
 	<div class="row">
@@ -30,7 +30,7 @@
 				  	<tbody>
 				  		<?php $nomor = 1; ?>
 				  		@php $no = 1; @endphp
-				  		@foreach($k as $data)
+				  		@foreach($p as $data)
 				  	  <tr>
 				    	<td>{{ $no++ }}</td>
 				    	<td>{{ $data->logo }}</td>

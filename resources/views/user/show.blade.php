@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('content')
 <div class="row">
 	<div class="container">
@@ -8,6 +8,8 @@
 			  	<div class="panel-title pull-right"><a href="{{ url()->previous() }}">Kembali</a>
 			  	</div>
 			  </div>
+			  <br>
+			  <br>
 			  <div class="panel-body">
         			<div class="form-group">
 			  			<label class="control-label">Name</label>	
@@ -24,12 +26,6 @@
 			  			<input type="text" name="password" class="form-control" value="{{ $a->password }}"  readonly>
 			  		</div>
 
-			  		<div class="form-group">
-			  			<label class="control-label">Nama Member</label>	
-			  			<textarea rows="10" class="form-control" readonly>@foreach($a->Member as $data)
-			  				-> {{ $data->nama_member }} Dan {{ $data->nama_member }}
-			  				@endforeach
-			  			</textarea> 
 			  		</div>
 			  	</div>
 			</div>	

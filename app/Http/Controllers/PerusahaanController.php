@@ -14,7 +14,7 @@ class PerusahaanController extends Controller
 
     public function index()
     {
-        $p = Perusahaan::with('Perusahaan')->get();
+        $p = Perusahaan::with('User')->get();
         return view('perusahaan.index',compact('p'));
     }
 
@@ -25,7 +25,7 @@ class PerusahaanController extends Controller
      */
     public function create()
     {
-        $o = Perusahaan::all();
+        $o = User::all();
         return view('perusahaan.create',compact('o'));
     }
 
@@ -47,7 +47,7 @@ class PerusahaanController extends Controller
             'tgl_mulai' => 'required|',
             'email' => 'required|unique:perusahaans',
             'telepon' => 'required|',
-            'id_organizer' => 'required|'
+            
         ]);
         $p = new Perusahaan;
         $p->logo = $request->logo;

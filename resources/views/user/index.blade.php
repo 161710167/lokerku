@@ -1,19 +1,22 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('content')
 
 	<div class="row">
 	<div class="container">
 	<div class="col-md-16">
+	 <br>
+			  <br>
 			<div class="panel panel-danger">
 			  <div class="panel-heading"><font color ="blue">Data User</font>
 			  	<div class="panel-title pull-right"><a href="{{ route('user.create') }}">Tambah</a>
 			  	</div>
 			  </div>
+
 			  <div class="panel-body">
 			  	<div class="table-responsive">
 				  <table class="table">
 				  	<thead>
-			  		<tr>
+
 			  		  <th>No</th>
 					  <th>Name</th>
 					  <th>Email</th>

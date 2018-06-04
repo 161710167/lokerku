@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 @section('content')
 <div class="row">
 	<div class="container">
@@ -13,7 +13,7 @@
 			  		{{ csrf_field() }}
 			  		<div class="form-group {{ $errors->has('foto') ? ' has-error' : '' }}">
 			  			<label class="control-label">Foto</label>	
-			  			<input type="img" name="foto" class="form-control"  required>
+			  			<img src="" name=foto" class="form-control"  required>
 			  			@if ($errors->has('foto'))
                             <span class="help-block">
                                 <strong>{{ $errors->first('foto') }}</strong>
